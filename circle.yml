@@ -32,9 +32,3 @@ test:
         pwd: docker/serverspec
         environment:
           DOCKER_CONTAINER: serverspec
-
-deployment:
-  master:
-    branch: 'master'
-    commands:
-      - docker push $DOCKER_REPO
